@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web</title>
+<link href="style.css" rel="stylesheet" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="tab">
+
+  <button class="tablinks" onclick="openCity(event, 'Fooldal')" id="defaultOpen"><h2>Modellek<h2></button>
+  <button class="tablinks" onclick="openCity(event, 'elso')">Hetilap</button>
+  <button class="tablinks" onclick="openCity(event, 'masodik')">Online</button>
+  <button class="tablinks" onclick="openCity(event, 'harmadik')">Hetilap-Online</button>
+    <button class="tablinks" onclick="openCity(event, 'negyedik')">Demó</button>
+	<button class="tablinks" onclick="openCity(event, 'negyedik')">Címkéző</button>
+	<button class="tablinks" onclick="openCity(event, 'negyedik')">Tanító</button>
+	
+</div>
+
+
+
+<div id="Fooldal" class="tabcontent">
+ Fooldal elemek....
+</div>
+
+<div id="elso" class="tabcontent">
+1....	
+</div>
+
+<div id="masodik" class="tabcontent">
+2....	
+</div>
+
+<div id="harmadik" class="tabcontent">
+3....
+</div>
+
+<div id="negyedik" class="tabcontent">
+4.....
+</div>
+ 
+<script>
+// Menü rendszer működése
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+
+</script>
+
+
+
+</body>
+</html>
