@@ -1,15 +1,16 @@
 body
 {
- background: white;
+ background: #e8e8e8;
 }
 * {box-sizing: border-box}
 body {font-family: "Lato", sans-serif;}
+
+
 /* Teljes oldal kinézete */
 .tab {
     float: left;
-    border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 20%;
+    width: 15%;
     height: 300px;
 }
 /* Menu Gombok alap kinézete */
@@ -37,7 +38,7 @@ body {font-family: "Lato", sans-serif;}
     border: 0px solid #ccc;
     width: 70%;
     border-left: none;
-    height: 300px;
+    height: 300px;	
 }
 
 /* Lista stílus */
