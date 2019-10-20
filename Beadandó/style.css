@@ -141,14 +141,15 @@ a:hover {
 }
 
 .eredeticimke {
-	width: 45%;
-	height: 300px;
+	width: 400px;
+	height: 150px;
 	border-radius: 5px;
 	background-color: #d3d3d3;
 	color: #478eff;
 	font-weight: bold;
-	padding: 20px;
+	padding: 10px;
     float: right;
+
 }
 
 .container{
@@ -168,7 +169,7 @@ a:hover {
 }
 .egy{
 	width: 100%;
-	height: 200px;
+	height: 80px;
 }
 
 .ketto{
