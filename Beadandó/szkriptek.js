@@ -24,3 +24,28 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 
+
+//buttons
+var select = document.getElementById("selectem");
+var options = select.getElementsByTagName("option");
+function first() {
+    select.selectedIndex = 0;
+}
+
+function next() {
+    if (select.selectedIndex == options.length-1)
+        first();
+    else
+        select.selectedIndex = select.selectedIndex+1;
+}
+
+function previous() {
+    if (select.selectedIndex == 0)
+        last();
+    else
+        select.selectedIndex = select.selectedIndex-1;
+}
+
+function last() {
+    select.selectedIndex = options.length-1;
+}
